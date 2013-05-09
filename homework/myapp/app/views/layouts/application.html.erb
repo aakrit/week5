@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myapp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Meet up Application </h1>
+
+<h3>
+<nav>
+  <%= link_to "Events Page", events_url %>
+    <xx style= padding-left:5em > <%= link_to "Venues Page", venues_url %> </xx>
+  </nav>
+</h3>
+<hr>
+<br>
+
+<%= yield %>
+
+</body>
+</html>
